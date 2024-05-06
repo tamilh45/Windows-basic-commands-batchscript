@@ -28,38 +28,81 @@ Execute the necessary commands/batch file for the desired output.
 Create a directory named "MyLab" on the desktop.
 
 
-## COMMAND AND OUTPUT
+## COMMAND
 
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
+```
+mkdir %userprofile%\Desktop\MyLab
+cd %userprofile%\Desktop\MyLab
+type nul > MyFile.txt
+
+```
+
+## OUTPUT:
+
+![image](https://github.com/shoaib3136/Windows-basic-commands-batchscript/assets/117919362/f4a46931-a18f-4409-911e-e6c1b1a927f1)
 
 
-## COMMAND AND OUTPUT
+
+## COMMAND
 
 List the contents of the "MyLab" directory.
+```
+dir %userprofile%\Desktop\MyLab
+```
+
+## Output:
+
+![image](https://github.com/shoaib3136/Windows-basic-commands-batchscript/assets/117919362/69c9ead1-f1e9-40e9-8da5-d3a792c597e9)
 
 
-## COMMAND AND OUTPUT
+
+## COMMAND
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 
-## COMMAND AND OUTPUT
-
 Move the "MyLab" directory to the "Documents" folder.
 
+```
+mkdir %userprofile%\Desktop\Backup
+copy MyFile.txt %userprofile%\Desktop\Backup
 
-## COMMAND AND OUTPUT
+```
+
+
+## OUTPUT
+![image](https://github.com/shoaib3136/Windows-basic-commands-batchscript/assets/117919362/e1e94b04-a9ac-46da-b030-4c96877b7a3d)
+
 
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
+```
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+
+```
+## OUTPUT:
+![image](https://github.com/shoaib3136/Windows-basic-commands-batchscript/assets/117919362/f229b016-199a-41f2-900c-7d8704b48ef7)
+
+
+```
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+del %userprofile%\Documents\*.docx
+
+```
 
 
 
 
 
 
-## OUTPUT
+
+## OUTPUT:
+![image](https://github.com/shoaib3136/Windows-basic-commands-batchscript/assets/117919362/d644b3de-673d-4ee2-8ca8-3cb595e4d128)
+
 
 
 
