@@ -107,7 +107,5 @@ del %userprofile%\Documents\*.docx
 
 
 
-
 # RESULT:
 The commands/batch files are executed successfully.
-
